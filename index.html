@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
+
+</head>
+
+<body class="game-cover flex-centered">
+  <h1 class="heading">Rock Paper Scissors</h1>
+  <div id="initial-screen">
+      <img id="logo" src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/game-image.png?raw=true" alt="logo">
+      <img class="play" id="play-button" src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/play-button.png?raw=true" alt="play-button">
+      <p class="play-text">Play the Game</p>
+  </div>
+
+  <div id="game-screen" style="display: none;">
+      <div class="score">
+          <span id="scores">0-0</span>
+      </div>
+      <div class="container">
+          <div class="you">
+              <span id="text">YOU</span>
+              <img src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/paper-logo.png?raw=true" id="paper" alt="paper">
+              <img src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/rock-logo.png?raw=true" id="rock" alt="rock">
+              <img src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/scissors-logo.png?raw=true" id="scissors" alt="scissors">
+              <img id="selectedLogo" src="" alt="Selected Logo" style="display: none;">
+          </div>
+          <img src="https://github.com/Kalvium-Program/Rock-Paper-Scissors-Solution/blob/main/assets/vs.png?raw=true" id="versus" width="50px" height="205px">
+          <div class="comp">COMP
+              <img id="computerLogo" src="" alt="" style="display: none;">
+          </div>
+      </div>
+      <div id="gameOver">
+          <h1 class="gameOverMessage"></h1>
+          <button class="playAgainButton" style="display: none;">Play Again</button>
+      </div>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+  <!-- <script src="tests/FunctionsTest.js"></script> -->
+</html>
